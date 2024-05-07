@@ -5,7 +5,7 @@ package week1.lim.Hash.clothes;
 import java.util.HashMap;
 import java.util.Map;
 
-public class clothes1 {
+public class clothes {
     static int solution(String[][] clothes) {
         Map<String, Integer> map = new HashMap<>();
         int answer = 1; // 곱셈이기에 시작값 1로 설정 (항등원)
