@@ -1,10 +1,10 @@
-package week1.lim;
+package week1.lim.Hash.phoneketmon;
 
 import java.util.HashSet;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/1845?language=java
 
-public class Hash_phoneketmon2 {
+public class phoneketmon2 {
     static int solution(int[] nums) {
         int max = nums.length / 2;  //  2
 

@@ -1,11 +1,11 @@
-package week1.lim;
+package week1.lim.Hash.phoneketmon;
 
 import java.util.HashMap;
 import java.util.Map;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/1845?language=java
 
-public class Hash_phoneketmon1 {
+public class phoneketmon1 {
     static int solution(int[] nums) {
         Map<Integer, Integer> pokemonTypes = new HashMap<>(); // 폰켓몬의 종류별로 개수 세기 위해 HashMap 사용
         int n = nums.length;

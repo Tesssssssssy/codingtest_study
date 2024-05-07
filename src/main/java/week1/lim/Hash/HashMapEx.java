@@ -1,4 +1,4 @@
-package week1.lim;
+package week1.lim.Hash;
 
 import java.util.HashMap;
 
