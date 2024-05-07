@@ -3,10 +3,7 @@ package week1.lim.Hash.bestalbum;
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42579
 // 참고: https://jisunshine.tistory.com/169
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class album {
     static int[] solution(String[] genres, int[] plays) {
@@ -85,10 +82,7 @@ public class album {
     public static void main(String[] args) {
         String[] genres = {"classic", "pop", "classic", "classic", "pop"};
         int[] plays = {500, 600, 150, 800, 2500};
-        int[] ans = solution(genres, plays);
 
-        for (int answer : ans) {
-            System.out.print(answer + " "); // 4 1 3 0
-        }
+        System.out.println(Arrays.toString(solution(genres, plays)));   // [4, 1, 3, 0]
     }
 }

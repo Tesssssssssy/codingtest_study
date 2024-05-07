@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/1845?language=java
 
-public class phoneketmon2 {
+public class phoneKetMon2 {
     static int solution(int[] nums) {
         int max = nums.length / 2;  //  2
 

@@ -2,7 +2,7 @@ package week1.lim.Hash.phonebook;
 
 import java.util.Arrays;
 
-public class phonebook {
+public class phoneBook {
     public static boolean solution(String[] phone_book) {
         Arrays.sort(phone_book);
 

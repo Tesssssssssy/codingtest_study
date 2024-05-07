@@ -5,7 +5,7 @@ import java.util.Map;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/1845?language=java
 
-public class phoneketmon1 {
+public class phoneKetMon1 {
     static int solution(int[] nums) {
         Map<Integer, Integer> pokemonTypes = new HashMap<>(); // 폰켓몬의 종류별로 개수 세기 위해 HashMap 사용
         int n = nums.length;
