@@ -10,8 +10,8 @@ public class hateSameNum1 {
         ArrayList<Integer> answerList = new ArrayList<Integer>();
 
         int value = -1;
-        for(int i=0; i<arr.length; i++) {
-            if(arr[i] != value) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != value) {
                 answerList.add(arr[i]);
                 value = arr[i];
             }

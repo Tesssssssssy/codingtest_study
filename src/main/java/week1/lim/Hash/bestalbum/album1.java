@@ -5,7 +5,7 @@ package week1.lim.Hash.bestalbum;
 
 import java.util.*;
 
-public class album {
+public class album1 {
     static int[] solution(String[] genres, int[] plays) {
         ArrayList<Integer> answer = new ArrayList<>();
         // 베스트 앨범에 들어갈 노래의 고유 번호를 저장할 리스트
