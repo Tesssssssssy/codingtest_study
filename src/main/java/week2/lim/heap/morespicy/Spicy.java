@@ -1,4 +1,4 @@
-package week2.lim.Heap.morespicy;
+package week2.lim.heap.morespicy;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42626
 

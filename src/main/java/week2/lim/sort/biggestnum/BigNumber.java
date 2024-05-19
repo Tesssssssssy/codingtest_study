@@ -1,4 +1,4 @@
-package week2.lim.Sort.biggestnum;
+package week2.lim.sort.biggestnum;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42746
 // 참고: https://hstory0208.tistory.com/entry/Java%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Lv2-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%88%98-%EC%A0%95%EB%A0%AC

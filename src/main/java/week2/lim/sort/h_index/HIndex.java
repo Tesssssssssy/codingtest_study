@@ -1,4 +1,4 @@
-package week2.lim.Sort.h_index;
+package week2.lim.sort.h_index;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42747
 
