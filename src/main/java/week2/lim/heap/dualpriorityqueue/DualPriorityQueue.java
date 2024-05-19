@@ -1,4 +1,4 @@
-package week2.lim.Heap.dualpriorityqueue;
+package week2.lim.heap.dualpriorityqueue;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42628
 

@@ -1,4 +1,4 @@
-package week2.lim.Heap;
+package week2.lim.heap;
 
 import java.util.PriorityQueue;
 

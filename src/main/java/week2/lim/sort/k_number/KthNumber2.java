@@ -1,4 +1,4 @@
-package week2.lim.Sort.k_number;
+package week2.lim.sort.k_number;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42748
 // 참고: https://velog.io/@imok-_/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-K%EB%B2%88%EC%A7%B8%EC%88%98-java

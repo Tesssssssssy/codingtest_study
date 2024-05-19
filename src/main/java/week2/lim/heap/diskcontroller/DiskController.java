@@ -1,4 +1,4 @@
-package week2.lim.Heap.diskcontroller;
+package week2.lim.heap.diskcontroller;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42627
 
