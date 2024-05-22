@@ -1,4 +1,4 @@
-package week3.lim.gymclothes;
+package week3.lim.greedy.gymclothes;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42862
 // 참고: https://velog.io/@puclpu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%B2%B4%EC%9C%A1%EB%B3%B5-Java

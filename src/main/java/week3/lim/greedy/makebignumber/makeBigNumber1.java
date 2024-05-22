@@ -1,4 +1,4 @@
-package week3.lim.makebignumber;
+package week3.lim.greedy.makebignumber;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42883
 

@@ -1,4 +1,4 @@
-package week3.lim.connectisland;
+package week3.lim.greedy.connectisland;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42861
 // 참고: https://chatgpt.com/c/0688c680-ce06-4fbb-8407-127b67646689
