@@ -1,4 +1,4 @@
-package week3.lim.connectisland;
+package week3.lim.greedy.connectisland;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42861
 

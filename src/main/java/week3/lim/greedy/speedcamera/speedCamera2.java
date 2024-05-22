@@ -1,4 +1,4 @@
-package week3.lim.speedcamera;
+package week3.lim.greedy.speedcamera;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42884
 

@@ -1,4 +1,4 @@
-package week3.lim.joystick;
+package week3.lim.greedy.joystick;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42860
 

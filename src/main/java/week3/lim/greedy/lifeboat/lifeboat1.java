@@ -1,4 +1,4 @@
-package week3.lim.lifeboat;
+package week3.lim.greedy.lifeboat;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42885
 
