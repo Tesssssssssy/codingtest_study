@@ -6,8 +6,10 @@ package week4.lim.bfsdfs.puzzle;
 import java.util.*;
 
 public class puzzle1 {
-    static int[] dx = {0, 0, 1, -1};  // X축 이동을 위한 배열
-    static int[] dy = {1, -1, 0, 0};  // Y축 이동을 위한 배열
+    static int[] dx = {0, 0, 1, -1};
+    // X축 이동을 위한 배열
+    static int[] dy = {1, -1, 0, 0};
+    // Y축 이동을 위한 배열
 
     public static int solution(int[][] game_board, int[][] table) {
         int answer = 0;
