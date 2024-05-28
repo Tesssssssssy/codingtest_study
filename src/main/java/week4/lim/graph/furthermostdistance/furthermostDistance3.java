@@ -1,0 +1,66 @@
+package week4.lim.graph.furthermostdistance;
+
+// 문제: https://school.programmers.co.kr/learn/courses/30/lessons/49189
+// 참고: https://velog.io/@suk13574/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4Java-%EA%B0%80%EC%9E%A5-%EB%A8%BC-%EB%85%B8%EB%93%9C
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class furthermostDistance3 {
+    static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+    //인접 리스트에 그래프 저장
+
+    public static int solution(int n, int[][] edge) {
+        for (int i = 0; i <= n; i++) graph.add(new ArrayList<>());
+
+        for (int[] i : edge) {
+            int v = i[0];
+            int w = i[1];
+            graph.get(v).add(w);
+            graph.get(w).add(v);
+        }
+
+        boolean[] visit = new boolean[n + 1];
+        return bfs(graph, n, visit);
+    }
+
+    public static int bfs(ArrayList<ArrayList<Integer>> graph, int n, boolean[] visit) {
+        Queue<int[]> q = new LinkedList<>();
+        int answer = 0;
+
+        q.add(new int[]{1, 0});
+        visit[1] = true;
+        int maxDepth = 0;
+
+        while (!q.isEmpty()) {
+            int[] arr = q.poll();
+            int v = arr[0];
+            int depth = arr[1];
+
+
+            if (maxDepth == depth) answer++; // 최대 길이 노드라면 answer++;
+            else if (maxDepth < depth) { // 더 긴 거리에 노드가 있다면 answer = 1, MaxDepth 갱신
+                maxDepth = depth;
+                answer = 1;
+            }
+
+
+            for (int i = 0; i < graph.get(v).size(); i++) {
+                int w = graph.get(v).get(i); //인접 정점
+                if (!visit[w]) {
+                    q.add(new int[]{w, depth + 1});
+                    visit[w] = true;
+                }
+            }
+        }
+
+        return answer;
+    }
+
+    public static void main(String[] args) {
+        int n1 = 6;
+        int[][] vertex1 = {{3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2}};
+        System.out.println(solution(n1, vertex1));  // 3
+    }
+}
