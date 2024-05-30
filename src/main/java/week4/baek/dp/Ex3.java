@@ -1,4 +1,4 @@
-package week5.baek.dp;
+package week4.baek.dp;
 
 public class Ex3 {
     public static int solution(int m, int n, int[][] puddles) {

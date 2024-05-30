@@ -1,4 +1,4 @@
-package week5.baek.binarysearch;
+package week4.baek.binarysearch;
 
 import java.util.Arrays;
 

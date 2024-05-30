@@ -1,4 +1,4 @@
-package week5.baek.dp;
+package week4.baek.dp;
 
 public class Ex4 {
     public static int solution(String arr[]) {
