@@ -1,4 +1,4 @@
-package week5.baek.dp;
+package week4.baek.dp;
 
 import java.util.ArrayList;
 import java.util.HashSet;
