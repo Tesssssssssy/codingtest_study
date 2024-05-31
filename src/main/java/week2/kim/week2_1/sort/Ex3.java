@@ -1,4 +1,4 @@
-package week2.kim.sort;
+package week2.kim.week2_1.sort;
 
 import java.util.Arrays;
 
@@ -18,6 +18,12 @@ import java.util.Arrays;
  * 입출력 예
  * citations		return
  * [3, 0, 6, 1, 5]	3
+ *
+ * [0 1 3 5 6]
+ * 0h 5
+ * 1h 4
+ * 3h 3
+ * 5h 2
  *
  * 입출력 예 설명
  * 이 과학자가 발표한 논문의 수는 5편이고, 그중 3편의 논문은 3회 이상 인용되었습니다.

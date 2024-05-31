@@ -1,4 +1,4 @@
-package week2.kim.sort;
+package week2.kim.week2_1.sort;
 
 import java.util.Arrays;
 

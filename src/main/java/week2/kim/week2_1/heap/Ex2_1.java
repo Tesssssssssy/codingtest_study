@@ -1,7 +1,6 @@
-package week2.kim.heap;
+package week2.kim.week2_1.heap;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
