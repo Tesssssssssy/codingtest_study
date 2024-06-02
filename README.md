@@ -19,8 +19,6 @@
         <td align="center">
             <b>김현균</b>
         </td>
-        <td align="center">
-            <b>홍현주</b>
         </td>
         <td align="center">
             <b>백송연</b>
@@ -32,9 +30,6 @@
         </td>
         <td align="center">
             <b><a href="https://github.com/Hyeon-Kyun">Hyeon-Kyun</b>
-        </td>
-        <td align="center">
-            <b><a href="https://github.com/hyeonjju">hyeonjju</b>
         </td>
         <td align="center">
             <b><a href="https://github.com/SongYeonBaek">SongYeonBaek</b>
