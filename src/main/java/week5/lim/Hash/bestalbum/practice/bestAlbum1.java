@@ -28,7 +28,7 @@ public class bestAlbum1 {
                 songsInGenre.put(genre, temp);
             } else {
                 totalSongsByGenre.put(genre, totalSongsByGenre.get(genre) + play);
-                songsInGenre.get(genre).put(i, play);
+                songsInGenre.get(genre).put(i, play); // hashmap은 key 하나에 value 여러 개 가능
             }
         }
         // 저장 끝
@@ -47,7 +47,7 @@ public class bestAlbum1 {
 
             answer.add(genreKey.get(0));
             if (genreKey.size() > 1) {
-                answer.add(genreKey.get(1));
+                answer.add(genreKey.get(1));    // index를 지정하니까 더 커져도 상관 x
             }
         }
         return answer.stream().mapToInt(i -> i).toArray();
