@@ -1,4 +1,4 @@
-package week2.kim.heap;
+package week2.kim.week2_1.heap;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -49,7 +49,7 @@ public class Ex3 {
     public static void main(String[] args) {
         Ex3 ex3 = new Ex3();
 
-        String[] operations1 = {"I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"};
+        String[] operations1 = {"I 16 11 11 11", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"};
         String[] operations2 = {"I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333"};
 
         // [0, 0] 반환
