@@ -24,9 +24,9 @@ public class Ex5 {
             Collections.sort(a);
 
             int count = 0;
-            for(int i : a){
-
-            }
+//            for(int i : a){
+//
+//            }
         }
     }
 }
