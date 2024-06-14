@@ -1,6 +1,5 @@
 package week1.baek.hash;
 
-
 import java.util.HashMap;
 
 class Ex1 {
@@ -9,7 +8,6 @@ class Ex1 {
         for (int i : nums){
             if(hm.containsKey(i))
                 hm.replace(i, hm.get(i)+1);
-
             else
                 hm.put(i, 1);
         }
@@ -22,7 +20,7 @@ class Ex1 {
         }
 
         //골라야하는 포켓몬 수가 종류보다 많을 때
-        else{
+        else {
             return hm.size();
         }
     }
