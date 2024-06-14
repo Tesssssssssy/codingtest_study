@@ -25,6 +25,8 @@ public class fatigue1 {
             visited[i] = false;
         }
         count = Math.max(count, depth);
+        // 재귀로 했을 때 또 호출했을 경우 해당되지 않아서 종료되면 이전까지 갱신한 값을 반환해야 하므로
+        // max 사용
     }
 
     public static void main(String[] args) {

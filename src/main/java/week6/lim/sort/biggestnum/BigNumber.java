@@ -15,7 +15,10 @@ public class BigNumber {
 
         // 두 수를 합친 값이 큰 순서대로 (내림차순)
         // o1 : 10, o2 : 2 이면 102과 210 중 뭐가 더 큰지 비교
-        Arrays.sort(str, (o1, o2) -> (o2 + o1).compareTo(o1 + o2));
+        Arrays.sort(str, (o1, o2) -> (o2 + o1).compareTo(o1 + o2));  // 내림차순
+        // Arrays.sort(str, (o1, o2) -> (o1 + o2).compareTo(o2 + o1));
+        // 오름차순
+        // [10, 2, 6]
 
         // System.out.println(Arrays.toString(str));
         // [6, 2, 10]
