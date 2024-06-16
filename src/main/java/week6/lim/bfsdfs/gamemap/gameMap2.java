@@ -16,35 +16,35 @@ public class gameMap2 {
         int[][] distance = new int[maps.length][maps[0].length];
 
         bfs(maps, distance);
-        answer = distance[maps.length-1][maps[0].length-1];
+        answer = distance[maps.length - 1][maps[0].length - 1];
 
-        if(answer == 0){
+        if (answer == 0) {
             answer = -1;
         }
 
         return answer;
     }
 
-    public static void bfs(int[][] maps, int[][] distance){
+    public static void bfs(int[][] maps, int[][] distance) {
         int x = 0;
         int y = 0;
         distance[x][y] = 1;
         Queue<int[]> queue = new LinkedList<>();
         queue.add(new int[]{x, y});
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int[] current = queue.remove();
             int cX = current[0];
             int cY = current[1];
 
-            for(int i = 0; i < 4; i++){
+            for (int i = 0; i < 4; i++) {
                 int nX = cX + dx[i];
                 int nY = cY + dy[i];
 
-                if(nX < 0 || nX > maps.length-1 || nY < 0 || nY > maps[0].length-1)
+                if (nX < 0 || nX > maps.length - 1 || nY < 0 || nY > maps[0].length - 1)
                     continue;
 
-                if(distance[nX][nY] == 0 && maps[nX][nY] == 1){
+                if (distance[nX][nY] == 0 && maps[nX][nY] == 1) {
                     distance[nX][nY] = distance[cX][cY] + 1;
                     queue.add(new int[]{nX, nY});
                 }
