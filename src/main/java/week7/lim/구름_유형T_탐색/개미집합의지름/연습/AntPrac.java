@@ -1,4 +1,4 @@
-package week7.lim.search.개미집합의지름.연습;
+package week7.lim.구름_유형T_탐색.개미집합의지름.연습;
 
 import java.io.BufferedReader;
 import java.io.IOException;
