@@ -15,6 +15,7 @@ public class steal {
             return money[0];
 
         // 첫 집을 포함, 마지막 집을 제외
+        // bottom-up 방식 (dp)
         int[] dp1 = new int[n];
         dp1[0] = money[0];
         dp1[1] = money[0];
@@ -24,6 +25,7 @@ public class steal {
         }
 
         // 마지막 집을 포함, 첫 집을 제외
+        // ( = 첫 집을 털지 않을 때 )
         int[] dp2 = new int[n];
         dp2[0] = 0;  // 첫 집을 털지 않기 때문에 0으로 시작
         dp2[1] = money[1];
