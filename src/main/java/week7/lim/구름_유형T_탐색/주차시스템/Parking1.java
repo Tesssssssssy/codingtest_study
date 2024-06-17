@@ -5,8 +5,10 @@ package week7.lim.구름_유형T_탐색.주차시스템;
 import java.util.*;
 import java.io.*;
 
-public class Parking {
+public class Parking1 {
     /**
+     * <DFS 사용한 재귀 호출 방식 사용하면 RUN TIME ERROR>
+     *
      *  주차장 정보 입력: 각 칸의 상태(0, 1, 2)를 입력 받음.
      *  BFS로 구역 탐색: 각 칸을 시작점으로 하여 BFS를 실행.
      *                방문하지 않은 칸이면서 자동차(1)가 없는 칸에서 시작.
