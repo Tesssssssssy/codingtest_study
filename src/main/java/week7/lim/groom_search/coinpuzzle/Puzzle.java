@@ -1,4 +1,4 @@
-package week7.lim.구름_유형T_탐색.동전퍼즐;
+package week7.lim.groom_search.coinpuzzle;
 
 // 문제: https://level.goorm.io/exam/195037/%EB%8F%99%EC%A0%84-%ED%8D%BC%EC%A6%90/quiz/1
 

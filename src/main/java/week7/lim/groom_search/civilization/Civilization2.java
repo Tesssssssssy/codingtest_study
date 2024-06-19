@@ -1,4 +1,4 @@
-package week7.lim.구름_유형T_탐색.문명;
+package week7.lim.groom_search.civilization;
 
 import java.util.*;
 import java.io.*;

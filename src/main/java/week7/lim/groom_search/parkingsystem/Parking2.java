@@ -1,4 +1,4 @@
-package week7.lim.구름_유형T_탐색.주차시스템;
+package week7.lim.groom_search.parkingsystem;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
