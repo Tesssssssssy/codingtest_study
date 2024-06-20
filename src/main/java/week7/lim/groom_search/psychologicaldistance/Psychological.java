@@ -1,4 +1,4 @@
-package week7.lim.구름_유형T_탐색.심리적거리감;
+package week7.lim.groom_search.psychologicaldistance;
 
 // 문제: https://level.goorm.io/exam/195775/%EC%8B%AC%EB%A6%AC%EC%A0%81-%EA%B1%B0%EB%A6%AC%EA%B0%90/quiz/1
 

@@ -1,4 +1,4 @@
-package week7.lim.구름_유형T_탐색.문명;
+package week7.lim.groom_search.civilization;
 
 // 문제: https://level.goorm.io/exam/48145/%EB%AC%B8%EB%AA%85/quiz/1
 

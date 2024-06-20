@@ -1,4 +1,4 @@
-package week7.lim.카카오2024겨울인턴십.가장많이받은선물;
+package week7.lim.kakao2024winter.present;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/258712
 // 참고: https://velog.io/@yujeongkwon/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-JAVA-%EA%B0%80%EC%9E%A5-%EB%A7%8E%EC%9D%B4-%EB%B0%9B%EC%9D%80-%EC%84%A0%EB%AC%BC

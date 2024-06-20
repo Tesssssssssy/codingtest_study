@@ -1,4 +1,4 @@
-package week7.lim.카카오2024겨울인턴십.도넛과막대그래프;
+package week7.lim.kakao2024winter.donut;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/258711
 // 참고: https://jih3508.tistory.com/201

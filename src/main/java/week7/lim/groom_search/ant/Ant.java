@@ -1,4 +1,4 @@
-package week7.lim.구름_유형T_탐색.개미집합의지름;
+package week7.lim.groom_search.ant;
 
 // 문제: https://level.goorm.io/exam/49060/%EA%B0%9C%EB%AF%B8-%EC%A7%91%ED%95%A9%EC%9D%98-%EC%A7%80%EB%A6%84/quiz/1
 // 참고: https://adjh54.tistory.com/384
