@@ -1,4 +1,4 @@
-package week8.baek;
+package week8.baek.june25;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class B1978 {
     public static boolean primeNumber(int n){
         if(n==1) return false;
+
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if(n % i == 0){ return false;}
         }
