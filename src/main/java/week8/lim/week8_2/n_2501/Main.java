@@ -33,3 +33,5 @@ public class Main {
         }
     }
 }
+
+// 리스트, 배열 안쓰고 나머지 구하고 나서 그냥 count 늘리고 그 count가 K일 때 i 리턴

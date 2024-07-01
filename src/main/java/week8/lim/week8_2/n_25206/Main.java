@@ -26,7 +26,7 @@ public class Main {
         for (int i = 0; i < 20; i++) {
             String[] input = br.readLine().split(" ");
             String courseName = input[0];
-            double score = Double.parseDouble(input[1]);
+            double score = Double.parseDouble(input[1]); // 학점
             String grade = input[2];
 
             // 등급이 P인 과목은 계산에서 제외
@@ -36,8 +36,8 @@ public class Main {
 
             // 과목 평점 계산
             double point = standard.get(grade);
-            totalPoints += score * point;
-            totalScore += score;
+            totalPoints += score * point; // 한 과목에 대한 점수
+            totalScore += score; // 몇 학점 들었는지
         }
 
         // 전공평점 계산
