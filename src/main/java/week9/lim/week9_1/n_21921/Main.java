@@ -1,4 +1,4 @@
-package week9.lim.n_21921;
+package week9.lim.week9_1.n_21921;
 
 // 문제: https://www.acmicpc.net/problem/21921
 
