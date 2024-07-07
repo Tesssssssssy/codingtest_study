@@ -40,7 +40,7 @@ public class Main {
 
         Arrays.sort(loss);
 
-        long max = Long.MIN_VALUE;
+        long max = Long.MIN_VALUE; // 0으로 해도 통과
         if (loss.length % 2 == 0) { // 근손실 값이 짝수 개인 경우
             for (int i = 0; i < (N / 2) + 1; i++) {
                 long sum = loss[i] + loss[N - i - 1];
