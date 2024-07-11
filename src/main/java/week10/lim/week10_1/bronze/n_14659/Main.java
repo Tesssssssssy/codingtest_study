@@ -1,4 +1,4 @@
-package week10.lim.week10_1.n_14659;
+package week10.lim.week10_1.bronze.n_14659;
 
 // 문제: https://www.acmicpc.net/problem/14659
 
