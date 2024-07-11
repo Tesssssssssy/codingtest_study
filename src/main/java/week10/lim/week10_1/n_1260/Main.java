@@ -86,24 +86,24 @@ public class Main {
     }
 
     // DFS
-    public static void dfs(int v, List<List<Integer>> graph, boolean[] visited, List<Integer> result) {
+    public static void dfs(int v, List<List<Integer>> graph, boolean[] visited, List<Integer> dfsResult) {
         // 현재 정점 v를 방문 처리.
         visited[v] = true;
         // 방문한 정점을 결과 리스트에 추가.
-        result.add(v);
+        dfsResult.add(v);
 
         // 현재 정점 v에 인접한 모든 정점을 순회.
         for (int neighbor : graph.get(v)) {
             // 인접한 정점 중 아직 방문하지 않은 정점에 대해
             if (!visited[neighbor]) {
                 // 재귀적으로 DFS를 호출하여 해당 정점 방문.
-                dfs(neighbor, graph, visited, result);
+                dfs(neighbor, graph, visited, dfsResult);
             }
         }
     }
 
     // BFS
-    public static void bfs(int v, List<List<Integer>> graph, boolean[] visited, List<Integer> result) {
+    public static void bfs(int v, List<List<Integer>> graph, boolean[] visited, List<Integer> bfsResult) {
         // 탐색을 시작할 정점을 큐에 추가.
         Queue<Integer> queue = new LinkedList<>();
         queue.add(v);
@@ -114,7 +114,7 @@ public class Main {
             // 큐에서 정점 하나 꺼내고.
             int node = queue.poll();
             // 꺼낸 정점을 결과 리스트에 추가.
-            result.add(node);
+            bfsResult.add(node);
 
             // 꺼낸 정점의 인접한 모든 정점을 순회.
             for (int neighbor : graph.get(node)) {
@@ -129,3 +129,15 @@ public class Main {
         }
     }
 }
+/*
+    자바에서 BFS를 구현할 때 Queue를 사용하는 이유
+    - 순서 유지: BFS는 그래프의 노드들을 레벨 별로 탐색한다.
+               이 과정에서 큐를 사용하면 방문해야 할 노드들을 순서대로 저장하고, 이 순서에 따라 노드를 처리할 수 있다.
+               이는 각 노드를 정확한 순서로 방문하고 그래프의 모든 노드를 효과적으로 탐색할 수 있게 도와준다.
+
+    - 효율적인 노드 관리: 큐는 FIFO(First In, First Out) 구조로 되어 있어, 먼저 들어온 노드가 먼저 나가게 된다.
+                      이 특성은 BFS의 레벨별 탐색에 적합하다.
+                      예를 들어, 한 노드의 인접 노드들을 모두 큐에 추가하고,
+                      그 노드를 처리한 후 다음 노드로 넘어가야 할 때,
+                      FIFO 구조는 자연스럽게 다음 레벨의 노드들로 진행하도록 한다.
+*/

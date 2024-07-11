@@ -17,10 +17,10 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] mountaintop = new int[N + 1];
+        int[] mountainTop = new int[N + 1];
 
         for (int i = 0; i < N; i++) {
-            mountaintop[i] = Integer.parseInt(st.nextToken());
+            mountainTop[i] = Integer.parseInt(st.nextToken());
         }
 
         int maxKilled = 0;
@@ -28,7 +28,7 @@ public class Main {
         for (int i = 0; i < N; i++) {
             int killed = 0;
             for (int j = i + 1; j < N; j++) {
-                if (mountaintop[i] > mountaintop[j]) {
+                if (mountainTop[i] > mountainTop[j]) {
                     killed++;
                 } else {
                     break;
