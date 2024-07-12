@@ -1,4 +1,4 @@
-package week8.baek;
+package week8.baek.june25;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,7 +21,9 @@ public class B1110 {
 
         int count = 1;
 
+//        int[] tmp = n;
         int[] tmp = {n[0], n[1]};
+
         int sum = tmp[0] + tmp[1];
         tmp[0] = tmp[1];
         tmp[1] = sum % 10;
@@ -31,7 +33,7 @@ public class B1110 {
             sum = tmp[0] + tmp[1];
             tmp[0] = tmp[1];
             tmp[1] = sum % 10;
-//            System.out.println(tmp[0] + " " + tmp[1]);
+//            System.out.println(tmp[0] + " " + tmp[1]);p
             count++;
         }
         System.out.println(count);

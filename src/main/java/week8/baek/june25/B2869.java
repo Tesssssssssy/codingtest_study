@@ -1,4 +1,4 @@
-package week8.baek;
+package week8.baek.june25;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,10 @@ public class B2869 {
         int B = Integer.parseInt(input.split(" ")[1]);
         int V = Integer.parseInt(input.split(" ")[2]);
 
-       int days = V / (A-B) + 1;
+        int days = (V-B) / (A-B);
+
+        if((V-B) % (A-B) != 0) days++;
+
         System.out.println(days);
     }
 }

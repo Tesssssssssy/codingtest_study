@@ -1,4 +1,4 @@
-package week8.baek;
+package week8.baek.june25;
 
 import java.io.BufferedReader;
 import java.io.IOException;
