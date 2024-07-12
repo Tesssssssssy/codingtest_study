@@ -15,7 +15,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < plaintext.length(); i++) {
             char c = plaintext.charAt(i);
-            if (c >= 'a' && c <= 'm' || c >= 'A' && c <= 'M') {
+            if (c >= 'a' && c <= 'm' || c >= 'A' && c <= 'M') { // m이 13번쨰 알파벳
                 c += 13;
             } else if (c >= 'n' && c <= 'z' || c >= 'N' && c <= 'Z') {
                 c -= 13;
