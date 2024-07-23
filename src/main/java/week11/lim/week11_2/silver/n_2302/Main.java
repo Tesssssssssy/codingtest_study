@@ -83,10 +83,11 @@ public class Main {
             고정 좌석과 행의 시작 또는 끝 사이의 구간까지도 동일한 방법으로 처리할 수 있다.
         */
 
-        Arrays.sort(vipSeats);
+//        Arrays.sort(vipSeats);
         /*
             고정 좌석 번호가 순서대로 입력되지 않을 수 있기 때문에,
             배열을 정렬하여 각 섹션을 올바르게 계산할 수 있도록 한다.
+            -> 정렬 없어도 통과 ok
         */
 
         int[] dp = new int[N + 1];
