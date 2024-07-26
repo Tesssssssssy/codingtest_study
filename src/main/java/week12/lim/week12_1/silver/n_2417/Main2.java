@@ -13,6 +13,9 @@ public class Main2 {
      *
      * [출력]
      * q^2 >= n인 가장 작은 음이 아닌 정수 q를 출력
+     *
+     * [시간 복잡도]
+     * O(log n)
      */
     static long n, answer = 0;
     public static void main(String[] args) throws Exception {
