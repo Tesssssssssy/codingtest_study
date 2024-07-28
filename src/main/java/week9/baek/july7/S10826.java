@@ -14,8 +14,12 @@ public class S10826 {
         else if (n == 1) System.out.println(1);
         else {
             BigInteger[] dp = new BigInteger[10001];
-            dp[0] = new BigInteger("0");
-            dp[1] = new BigInteger("1");
+//            dp[0] = new BigInteger("0");
+            dp[0] = BigInteger.ZERO;
+
+//            dp[1] = new BigInteger("1");
+            dp[1] = BigInteger.ONE;
+
             for (int i = 2; i <= n; i++) {
                 dp[i] = dp[i-2].add(dp[i-1]);
             }
