@@ -158,6 +158,8 @@ public class Main {
         */
 
         if (depth >= limit || limit < str.length()) {
+            // limit을 str 길이가 넘어가면 (이미 bit 자릿수 채운 것)
+            // 0을 앞에 채우지 않고 바로 str 반환
             return str;
         }
         return append(depth + 1, "0" + str, limit);
