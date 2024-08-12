@@ -15,11 +15,11 @@ public class Main {
      * EPIPHONE 으로 4, 5번 곡을 제대로 연주할 수 있고,
      * ESP 로 1번곡을 제대로 연주할 수 있다면,
      * -> 세준이는 EPIPHONE 과 GIBSON 을 사면 최소의 개수로 모든 곡을 연주할 수 있다.
-     * <p>
+     *
      * [입력]
      * 기타의 개수 N (<= 10), 곡의 개수 M (<= 50)
      * N개의 줄에 기타의 이름과 연주할 수 있는 곡의 정보 (1번 곡부터)
-     * <p>
+     *
      * [출력]
      * 필요한 기타의 개수
      * (연주할 수 있는 곡이 없으면 -1 출력)
@@ -39,9 +39,9 @@ public class Main {
     }
 
     static Guitar[] guitars;  // 입력받은 기타들
-    static int[] selectedGuitars;  // 선택된 기타 인덱스
+    static int[] selectedGuitars;  // 현재 선택된 기타 인덱스를 저장하는 배열. (일종의 순열 조합)
     static int N, M, maxSongsCanPlay, minGuitarCount;
-    // 기타 개수, 곡 개수, 최대로 연주할 수 있는 곡의 개수, 최소 기타 개수
+    // 기타 개수, 곡 개수, 현재까지 발견된 최대로 연주할 수 있는 곡의 개수, 현재까지 발견된 최소 기타 수.
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -91,7 +91,7 @@ public class Main {
         - maxCount: 현재 조합에서 선택할 기타 수.
 
         - 재귀적으로 모든 기타 조합을 탐색.
-        - currentCount가 maxCount에 도달하면,
+        - currentCount 가 maxCount 에 도달하면,
           현재 조합의 기타들로 모든 곡을 연주할 수 있는지 확인 (checkIfAllSongsCovered 메서드).
     */
     public static void findGuitarCombination(int currentCount, int start, int maxCount) {
@@ -109,10 +109,16 @@ public class Main {
     }
 
     /*
-        연주 가능한지 확인
+        연주 가능한지 확인.
         guitarCheck: 현재 곡을 연주할 수 있는지 여부를 저장.
         모든 곡을 커버할 수 있는지 확인.
         maxSongsCanPlay 와 minGuitarCount 갱신.
+
+        각 곡을 순회하며, 현재 선택된 기타 조합으로 연주 가능한지 확인.
+
+        모든 곡을 커버할 수 있는지 확인.
+        maxSongsCanPlay 와 minGuitarCount 를 갱신.
+        연주 가능한 곡이 최대라면 이를 갱신하고, 같은 수의 곡을 연주할 수 있다면 더 적은 기타 수를 갱신.
     */
     public static boolean checkIfAllSongsCovered(Guitar[] guitars, int[] selectedGuitars, int maxCount) {
         boolean result = true;
