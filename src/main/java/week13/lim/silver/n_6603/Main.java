@@ -35,7 +35,7 @@ public class Main {
             if (k == 0)
                 break;  // 입력 종료 조건
 
-            int[] S = new int[k];
+            int[] S = new int[k+1];
             for (int i = 0; i < k; i++) {
                 S[i] = Integer.parseInt(st.nextToken());
             }
@@ -92,4 +92,20 @@ public class Main {
     이 조합을 출력한 후, 다시 3을 제거 (sequence = [1]).
 
     모든 조합을 시도했으므로 첫 번째 선택도 되돌려서 새로운 시작을 준비.
+*/
+
+/*
+    start를 1로 설정하고 반복문에 부등호를 넣고 싶다면, 배열 인덱스와 start 값의 관계를 조정해야 합니다.
+    기본적으로 배열 인덱스는 0부터 시작하지만, start 값을 1로 설정하면 인덱스를 사용할 때 이를 고려해야 합니다.
+
+    수정 방법:
+    backtrack 메서드 호출 시 start를 1로 설정합니다.
+    반복문에서 start를 1부터 시작하되, 배열에 접근할 때 인덱스를 i - 1로 조정합니다.
+    이는 start가 1부터 시작할 때, 실제 배열 인덱스는 0부터 시작하는 것을 맞추기 위함입니다.
+
+    for (int i = start; i <= S.length; i++) {  // i <= S.length로 변경
+                sequence.add(S[i - 1]);  // 실제 배열 인덱스는 i - 1
+                backtrack(S, depth + 1, i + 1);
+                sequence.remove(sequence.size() - 1);  // 백트래킹 (마지막 수 제거)
+    }
 */
