@@ -47,5 +47,7 @@ public class Solution {
         for (String message : result) {
             System.out.println(message);
         }
+        // ["Prodo님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Prodo님이 나갔습니다.", "Prodo님이 들어왔습니다."]
+
     }
 }
