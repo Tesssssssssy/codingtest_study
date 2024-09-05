@@ -1,4 +1,4 @@
-package week17.lim.n_42888;
+package week17.lim.n_42888.practice;
 
 // 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42888
 
@@ -7,11 +7,8 @@ import java.util.*;
 public class Solution {
     public static String[] solution(String[] record) {
         HashMap<String, String> userMap = new HashMap<>();
-        // userId와 nickname 매핑해 저장
-
         List<String> resultList = new ArrayList<>();
 
-        // 첫 번째 반복: Enter와 Change 명령어를 처리하여 userMap 갱신
         for (String r : record) {
             String[] parts = r.split(" ");
             String command = parts[0];
@@ -23,7 +20,6 @@ public class Solution {
             }
         }
 
-        // 두 번째 반복: 출력할 최종 메시지 구성
         for (String r : record) {
             String[] parts = r.split(" ");
             String command = parts[0];
@@ -36,7 +32,6 @@ public class Solution {
             }
         }
 
-        // 결과를 배열로 변환
         return resultList.toArray(new String[resultList.size()]);
     }
 

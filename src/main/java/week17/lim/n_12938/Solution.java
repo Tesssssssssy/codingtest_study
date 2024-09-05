@@ -12,8 +12,8 @@ public class Solution {
         }
 
         // 몫과 나머지 구하기
-        int q = s / n;
-        int r = s % n;
+        int q = s / n; // 4
+        int r = s % n; // 1
 
         // 결과 배열 초기화
         int[] result = new int[n];
